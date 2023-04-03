@@ -69,6 +69,10 @@ $(document).ready(function() {
             "<td>" + cost + "</td>" +
             "<td>" + description + "</td>" +
             "<td>" + quantity + "</td>" +
+            "<td>" +
+                "<button class='btnUpdate btn btn-primary' value=\'"+product+"\'>Τροποποίηση</button> " +
+                "<button class='btnDelete btn btn-primary' value=\'"+product+"\'>Διαγραφή</button>" +
+            "</td>" + 
             "</tr>"
 
             $("#productTable tbody").append(tr_str)

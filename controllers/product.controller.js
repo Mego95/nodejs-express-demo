@@ -33,7 +33,6 @@ exports.create = function(req, res) {
     newProduct.save((err, results) => {
         if (err) {
             res.status(400).json({ status: false, data: err })
-            //console.log(err)
         } else {
             res.status(200).json({ status: true, data: results })
         }
